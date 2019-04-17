@@ -6,4 +6,4 @@ The golang code in Leetcode.
 All the code here are Accepted. But maybe not the best solution.
 
 -----
-Status: (46/852)
+Status: (50/852)
