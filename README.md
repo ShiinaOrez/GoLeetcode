@@ -6,7 +6,7 @@ The golang code in Leetcode.
 All the code here are Accepted. But maybe not the best solution.
 
 -----
-Status: (113/1041)
+Status: (114/1041)
 
-| <font color=green size=5>简单：28</font> | <font color=yellow size=5>中等：62</font> | <font color=red size=5>困难：23</font> |
+| <font color=green size=5>简单：28</font> | <font color=yellow size=5>中等：63</font> | <font color=red size=5>困难：23</font> |
 | ----------------------------------------|------------------------------------------|---------------------------------------|
