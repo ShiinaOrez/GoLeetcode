@@ -6,9 +6,9 @@ The golang code in Leetcode.
 All the code here are Accepted. But maybe not the best solution.
 
 -----
-Status: [146(142 golang + 4 cpp) / 1041]
+Status: [147(143 golang + 4 cpp) / 1041]
 
-| <font color=green size=5>简单：35</font> | <font color=yellow size=5>中等：79</font> | <font color=red size=5>困难：32</font> |
+| <font color=green size=5>简单：35</font> | <font color=yellow size=5>中等：80</font> | <font color=red size=5>困难：32</font> |
 | ----------------------------------------|------------------------------------------|---------------------------------------|
 
 -----
