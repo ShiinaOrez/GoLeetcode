@@ -1,4 +1,4 @@
-# GoLeetcode
+# GoLeetcode -- Solutions Set
 The golang code in Leetcode.
 
 -----
@@ -6,10 +6,12 @@ The golang code in Leetcode.
 All the code here are Accepted. But maybe not the best solution.
 
 -----
-Status: [150(146 golang + 4 cpp) / 1041]
 
-| <font color=green size=5>简单：35</font> | <font color=yellow size=5>中等：82</font> | <font color=red size=5>困难：33</font> |
-| ----------------------------------------|------------------------------------------|---------------------------------------|
+| 总数：150 | Go：146 | Cpp：4 |
+| -------- | ------ | ------ |
+
+| 简单：35 | 中等：82 | 困难：33 |
+| ------- | ------- | ------- |
 
 -----
 
