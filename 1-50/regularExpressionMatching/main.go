@@ -99,21 +99,21 @@ import "fmt"
 }*/
 
 func isMatch(s string, p string) bool {
-    if p == "" {
-        return s == ""
-    }
-    firstMatch := !(s == "") && (s[0] == p[0] || p[0] == '.')
-    if len(p) > 1 && p[1] == byte('*') {
-        return isMatch(s, p[2:]) || (firstMatch && isMatch(s[1:], p))
-    } else {
-        return firstMatch && isMatch(s[1:], p[1:])
-    }
+	if p == "" {
+		return s == ""
+	}
+	firstMatch := !(s == "") && (s[0] == p[0] || p[0] == '.')
+	if len(p) > 1 && p[1] == byte('*') {
+		return isMatch(s, p[2:]) || (firstMatch && isMatch(s[1:], p))
+	} else {
+		return firstMatch && isMatch(s[1:], p[1:])
+	}
 }
 
 func main() {
-//    ss := "abcde"
-//    for i:=0; i<len(ss); i++ {
-//        fmt.Println(i, ss[:i], ss[i:])
-//    }
-    fmt.Println(isMatch("aaa", "ab*a*c*a"))
+	//    ss := "abcde"
+	//    for i:=0; i<len(ss); i++ {
+	//        fmt.Println(i, ss[:i], ss[i:])
+	//    }
+	fmt.Println(isMatch("aaa", "ab*a*c*a"))
 }

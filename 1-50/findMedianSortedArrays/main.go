@@ -54,41 +54,41 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 }*/
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
-    var nums []int
-    index1 := 0
-    index2 := 0
-    length1 := len(nums1)
-    length2 := len(nums2)
-    if length1 == 0 {
-        nums = nums2
-    } else if length2 == 0 {
-        nums = nums1
-    } else {
-        for index1 < length1 && index2 < length2 {
-            if nums1[index1] <= nums2[index2] {
-                nums = append(nums, nums1[index1])
-                index1 += 1
-            } else {
-                nums = append(nums, nums2[index2])
-                index2 += 1
-            }
-        }
-        for index1 < length1 {
-            nums = append(nums, nums1[index1])
-            index1 += 1
-        }
-        for index2 < length2 {
-            nums = append(nums, nums2[index2])
-            index2 += 1
-        }
-    }
-    if (length1 + length2) % 2 == 1 {
-        return float64(nums[(length1+length2-1)/2])
-    }
-    fmt.Println(nums[(length1+length2)/2], nums[(length1+length2)/2 - 1], nums)
-    return (float64(nums[(length1+length2)/2]) + float64(nums[(length1+length2)/2 - 1])) / 2
+	var nums []int
+	index1 := 0
+	index2 := 0
+	length1 := len(nums1)
+	length2 := len(nums2)
+	if length1 == 0 {
+		nums = nums2
+	} else if length2 == 0 {
+		nums = nums1
+	} else {
+		for index1 < length1 && index2 < length2 {
+			if nums1[index1] <= nums2[index2] {
+				nums = append(nums, nums1[index1])
+				index1 += 1
+			} else {
+				nums = append(nums, nums2[index2])
+				index2 += 1
+			}
+		}
+		for index1 < length1 {
+			nums = append(nums, nums1[index1])
+			index1 += 1
+		}
+		for index2 < length2 {
+			nums = append(nums, nums2[index2])
+			index2 += 1
+		}
+	}
+	if (length1+length2)%2 == 1 {
+		return float64(nums[(length1+length2-1)/2])
+	}
+	fmt.Println(nums[(length1+length2)/2], nums[(length1+length2)/2-1], nums)
+	return (float64(nums[(length1+length2)/2]) + float64(nums[(length1+length2)/2-1])) / 2
 }
 
 func main() {
-    fmt.Println(findMedianSortedArrays([]int{1}, []int{2, 3, 4}))
+	fmt.Println(findMedianSortedArrays([]int{1}, []int{2, 3, 4}))
 }
